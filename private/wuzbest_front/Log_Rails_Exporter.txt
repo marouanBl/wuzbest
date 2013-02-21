@@ -1,0 +1,152 @@
+====== SCHEMA: wuzbest_front
+ 
+=== SCHEMA TABLE: censored_word
+* MIGRATION data done for Table: censored_word
++ MIGRATION file Created: C:\Users\marwen\AppData\Roaming\Rails_Exporter\wuzbest_front\db\migrate\20130221161001_create_censored_words.rb
+* SCHEMA data done for Table: censored_word
+* MODEL data done for Table: censored_word
++ MODEL file Created: C:\Users\marwen\AppData\Roaming\Rails_Exporter\wuzbest_front\app\models\censored_word.rb
+* SEED data done for Table: censored_word
+ 
+=== SCHEMA TABLE: picture
+* MIGRATION data done for Table: picture
++ MIGRATION file Created: C:\Users\marwen\AppData\Roaming\Rails_Exporter\wuzbest_front\db\migrate\20130221161002_create_pictures.rb
+* SCHEMA data done for Table: picture
+* MODEL data done for Table: picture
++ MODEL file Created: C:\Users\marwen\AppData\Roaming\Rails_Exporter\wuzbest_front\app\models\picture.rb
+* SEED data done for Table: picture
+ 
+=== SCHEMA TABLE: config_type
+* MIGRATION data done for Table: config_type
++ MIGRATION file Created: C:\Users\marwen\AppData\Roaming\Rails_Exporter\wuzbest_front\db\migrate\20130221161003_create_config_types.rb
+* SCHEMA data done for Table: config_type
+* MODEL data done for Table: config_type
++ MODEL file Created: C:\Users\marwen\AppData\Roaming\Rails_Exporter\wuzbest_front\app\models\config_type.rb
+* SEED data done for Table: config_type
+ 
+=== SCHEMA TABLE: currency
+* MIGRATION data done for Table: currency
++ MIGRATION file Created: C:\Users\marwen\AppData\Roaming\Rails_Exporter\wuzbest_front\db\migrate\20130221161004_create_currencies.rb
+* SCHEMA data done for Table: currency
+* MODEL data done for Table: currency
++ MODEL file Created: C:\Users\marwen\AppData\Roaming\Rails_Exporter\wuzbest_front\app\models\currency.rb
+* SEED data done for Table: currency
+ 
+=== SCHEMA TABLE: city
+* MIGRATION data done for Table: city
++ MIGRATION file Created: C:\Users\marwen\AppData\Roaming\Rails_Exporter\wuzbest_front\db\migrate\20130221161005_create_cities.rb
+* SCHEMA data done for Table: city
+* MODEL data done for Table: city
++ MODEL file Created: C:\Users\marwen\AppData\Roaming\Rails_Exporter\wuzbest_front\app\models\city.rb
+* SEED data done for Table: city
+ 
+=== SCHEMA TABLE: notifications_users
+! Skipped as join table for n:m relation of table: notifications_users
+ 
+=== SCHEMA TABLE: country
+* MIGRATION data done for Table: country
++ MIGRATION file Created: C:\Users\marwen\AppData\Roaming\Rails_Exporter\wuzbest_front\db\migrate\20130221161006_create_countries.rb
+* SCHEMA data done for Table: country
+* MODEL data done for Table: country
++ MODEL file Created: C:\Users\marwen\AppData\Roaming\Rails_Exporter\wuzbest_front\app\models\country.rb
+* SEED data done for Table: country
+ 
+=== SCHEMA TABLE: message
+* MIGRATION data done for Table: message
++ MIGRATION file Created: C:\Users\marwen\AppData\Roaming\Rails_Exporter\wuzbest_front\db\migrate\20130221161007_create_messages.rb
+* SCHEMA data done for Table: message
+* MODEL data done for Table: message
++ MODEL file Created: C:\Users\marwen\AppData\Roaming\Rails_Exporter\wuzbest_front\app\models\message.rb
+* SEED data done for Table: message
+ 
+=== SCHEMA TABLE: notification
+* MIGRATION data done for Table: notification
++ MIGRATION file Created: C:\Users\marwen\AppData\Roaming\Rails_Exporter\wuzbest_front\db\migrate\20130221161008_create_notifications.rb
+* SCHEMA data done for Table: notification
+* MODEL data done for Table: notification
++ MODEL file Created: C:\Users\marwen\AppData\Roaming\Rails_Exporter\wuzbest_front\app\models\notification.rb
+* SEED data done for Table: notification
+ 
+=== SCHEMA TABLE: post
+* MIGRATION data done for Table: post
++ MIGRATION file Created: C:\Users\marwen\AppData\Roaming\Rails_Exporter\wuzbest_front\db\migrate\20130221161009_create_posts.rb
+* SCHEMA data done for Table: post
+* MODEL data done for Table: post
++ MODEL file Created: C:\Users\marwen\AppData\Roaming\Rails_Exporter\wuzbest_front\app\models\post.rb
+* SEED data done for Table: post
+ 
+=== SCHEMA TABLE: state
+* MIGRATION data done for Table: state
++ MIGRATION file Created: C:\Users\marwen\AppData\Roaming\Rails_Exporter\wuzbest_front\db\migrate\20130221161010_create_states.rb
+* SCHEMA data done for Table: state
+* MODEL data done for Table: state
++ MODEL file Created: C:\Users\marwen\AppData\Roaming\Rails_Exporter\wuzbest_front\app\models\state.rb
+* SEED data done for Table: state
+ 
+=== SCHEMA TABLE: admin_contact
+* MIGRATION data done for Table: admin_contact
++ MIGRATION file Created: C:\Users\marwen\AppData\Roaming\Rails_Exporter\wuzbest_front\db\migrate\20130221161011_create_admin_contacts.rb
+* SCHEMA data done for Table: admin_contact
+* MODEL data done for Table: admin_contact
++ MODEL file Created: C:\Users\marwen\AppData\Roaming\Rails_Exporter\wuzbest_front\app\models\admin_contact.rb
+* SEED data done for Table: admin_contact
+ 
+=== SCHEMA TABLE: comparaisons_products
+* MIGRATION data done for Table: comparaisons_products
++ MIGRATION file Created: C:\Users\marwen\AppData\Roaming\Rails_Exporter\wuzbest_front\db\migrate\20130221161012_create_comparaisons_products.rb
+* SCHEMA data done for Table: comparaisons_products
+* MODEL data done for Table: comparaisons_products
++ MODEL file Created: C:\Users\marwen\AppData\Roaming\Rails_Exporter\wuzbest_front\app\models\comparaisons_product.rb
+* SEED data done for Table: comparaisons_products
+ 
+=== SCHEMA TABLE: cities_pictures
+* MIGRATION data done for Table: cities_pictures
++ MIGRATION file Created: C:\Users\marwen\AppData\Roaming\Rails_Exporter\wuzbest_front\db\migrate\20130221161013_create_cities_pictures.rb
+* SCHEMA data done for Table: cities_pictures
+* MODEL data done for Table: cities_pictures
++ MODEL file Created: C:\Users\marwen\AppData\Roaming\Rails_Exporter\wuzbest_front\app\models\cities_picture.rb
+* SEED data done for Table: cities_pictures
+ 
+=== SCHEMA TABLE: credibilities_users
+! Skipped as join table for n:m relation of table: credibilities_users
+ 
+=== SCHEMA TABLE: config
+* MIGRATION data done for Table: config
++ MIGRATION file Created: C:\Users\marwen\AppData\Roaming\Rails_Exporter\wuzbest_front\db\migrate\20130221161014_create_configs.rb
+* SCHEMA data done for Table: config
+* MODEL data done for Table: config
++ MODEL file Created: C:\Users\marwen\AppData\Roaming\Rails_Exporter\wuzbest_front\app\models\config.rb
+* SEED data done for Table: config
+ 
+=== SCHEMA TABLE: feedback
+* MIGRATION data done for Table: feedback
++ MIGRATION file Created: C:\Users\marwen\AppData\Roaming\Rails_Exporter\wuzbest_front\db\migrate\20130221161015_create_feedbacks.rb
+* SCHEMA data done for Table: feedback
+* MODEL data done for Table: feedback
++ MODEL file Created: C:\Users\marwen\AppData\Roaming\Rails_Exporter\wuzbest_front\app\models\feedback.rb
+* SEED data done for Table: feedback
+ 
+=== SCHEMA TABLE: board_folders_products
+* MIGRATION data done for Table: board_folders_products
++ MIGRATION file Created: C:\Users\marwen\AppData\Roaming\Rails_Exporter\wuzbest_front\db\migrate\20130221161016_create_board_folders_products.rb
+* SCHEMA data done for Table: board_folders_products
+* MODEL data done for Table: board_folders_products
++ MODEL file Created: C:\Users\marwen\AppData\Roaming\Rails_Exporter\wuzbest_front\app\models\board_folders_product.rb
+* SEED data done for Table: board_folders_products
+ 
+=== SCHEMA TABLE: pictures_users
+* MIGRATION data done for Table: pictures_users
++ MIGRATION file Created: C:\Users\marwen\AppData\Roaming\Rails_Exporter\wuzbest_front\db\migrate\20130221161017_create_pictures_users.rb
+* SCHEMA data done for Table: pictures_users
+* MODEL data done for Table: pictures_users
++ MODEL file Created: C:\Users\marwen\AppData\Roaming\Rails_Exporter\wuzbest_front\app\models\pictures_user.rb
+* SEED data done for Table: pictures_users
+ 
+=== SCHEMA TABLE: notifications_subscriptions
+! Skipped as join table for n:m relation of table: notifications_subscriptions
+ 
+=== SCHEMA TABLE: comments_posts
+! Skipped as join table for n:m relation of table: comments_posts
+ 
+=== SCHEMA TABLE: admin_contacts_messages
+! Skipped as join table for n:m relation of table: admin_contacts_messages

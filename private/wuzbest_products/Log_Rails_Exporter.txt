@@ -1,0 +1,114 @@
+====== SCHEMA: wuzbest_products
+ 
+=== SCHEMA TABLE: products_shops
+* MIGRATION data done for Table: products_shops
++ MIGRATION file Created: C:\Users\marwen\AppData\Roaming\Rails_Exporter\wuzbest_products\db\migrate\20130221161018_create_products_shops.rb
+* SCHEMA data done for Table: products_shops
+* MODEL data done for Table: products_shops
++ MODEL file Created: C:\Users\marwen\AppData\Roaming\Rails_Exporter\wuzbest_products\app\models\products_shop.rb
+* SEED data done for Table: products_shops
+ 
+=== SCHEMA TABLE: product
+* MIGRATION data done for Table: product
++ MIGRATION file Created: C:\Users\marwen\AppData\Roaming\Rails_Exporter\wuzbest_products\db\migrate\20130221161019_create_products.rb
+* SCHEMA data done for Table: product
+* MODEL data done for Table: product
++ MODEL file Created: C:\Users\marwen\AppData\Roaming\Rails_Exporter\wuzbest_products\app\models\product.rb
+* SEED data done for Table: product
+ 
+=== SCHEMA TABLE: category
+* MIGRATION data done for Table: category
++ MIGRATION file Created: C:\Users\marwen\AppData\Roaming\Rails_Exporter\wuzbest_products\db\migrate\20130221161020_create_categories.rb
+* SCHEMA data done for Table: category
+* MODEL data done for Table: category
++ MODEL file Created: C:\Users\marwen\AppData\Roaming\Rails_Exporter\wuzbest_products\app\models\category.rb
+* SEED data done for Table: category
+ 
+=== SCHEMA TABLE: pictures_products
+! Skipped as join table for n:m relation of table: pictures_products
+ 
+=== SCHEMA TABLE: manufacturers_pictures
+! Skipped as join table for n:m relation of table: manufacturers_pictures
+ 
+=== SCHEMA TABLE: cities_shops
+* MIGRATION data done for Table: cities_shops
++ MIGRATION file Created: C:\Users\marwen\AppData\Roaming\Rails_Exporter\wuzbest_products\db\migrate\20130221161021_create_cities_shops.rb
+* SCHEMA data done for Table: cities_shops
+* MODEL data done for Table: cities_shops
++ MODEL file Created: C:\Users\marwen\AppData\Roaming\Rails_Exporter\wuzbest_products\app\models\cities_shop.rb
+* SEED data done for Table: cities_shops
+ 
+=== SCHEMA TABLE: comments_manufacturers
+! Skipped as join table for n:m relation of table: comments_manufacturers
+ 
+=== SCHEMA TABLE: cities_manufacturers
+* MIGRATION data done for Table: cities_manufacturers
++ MIGRATION file Created: C:\Users\marwen\AppData\Roaming\Rails_Exporter\wuzbest_products\db\migrate\20130221161022_create_cities_manufacturers.rb
+* SCHEMA data done for Table: cities_manufacturers
+* MODEL data done for Table: cities_manufacturers
++ MODEL file Created: C:\Users\marwen\AppData\Roaming\Rails_Exporter\wuzbest_products\app\models\cities_manufacturer.rb
+* SEED data done for Table: cities_manufacturers
+ 
+=== SCHEMA TABLE: manufacturers_shops
+* MIGRATION data done for Table: manufacturers_shops
++ MIGRATION file Created: C:\Users\marwen\AppData\Roaming\Rails_Exporter\wuzbest_products\db\migrate\20130221161023_create_manufacturers_shops.rb
+* SCHEMA data done for Table: manufacturers_shops
+* MODEL data done for Table: manufacturers_shops
++ MODEL file Created: C:\Users\marwen\AppData\Roaming\Rails_Exporter\wuzbest_products\app\models\manufacturers_shop.rb
+* SEED data done for Table: manufacturers_shops
+ 
+=== SCHEMA TABLE: comment
+* MIGRATION data done for Table: comment
++ MIGRATION file Created: C:\Users\marwen\AppData\Roaming\Rails_Exporter\wuzbest_products\db\migrate\20130221161024_create_comments.rb
+* SCHEMA data done for Table: comment
+* MODEL data done for Table: comment
++ MODEL file Created: C:\Users\marwen\AppData\Roaming\Rails_Exporter\wuzbest_products\app\models\comment.rb
+* SEED data done for Table: comment
+ 
+=== SCHEMA TABLE: comments_products
+! Skipped as join table for n:m relation of table: comments_products
+ 
+=== SCHEMA TABLE: prices_products
+! Skipped as join table for n:m relation of table: prices_products
+ 
+=== SCHEMA TABLE: comments_comparaisons
+! Skipped as join table for n:m relation of table: comments_comparaisons
+ 
+=== SCHEMA TABLE: manufacturers_stock_timelines
+! Skipped as join table for n:m relation of table: manufacturers_stock_timelines
+ 
+=== SCHEMA TABLE: currencies_manufacturers
+* MIGRATION data done for Table: currencies_manufacturers
++ MIGRATION file Created: C:\Users\marwen\AppData\Roaming\Rails_Exporter\wuzbest_products\db\migrate\20130221161025_create_currencies_manufacturers.rb
+* SCHEMA data done for Table: currencies_manufacturers
+* MODEL data done for Table: currencies_manufacturers
++ MODEL file Created: C:\Users\marwen\AppData\Roaming\Rails_Exporter\wuzbest_products\app\models\currencies_manufacturer.rb
+* SEED data done for Table: currencies_manufacturers
+ 
+=== SCHEMA TABLE: specification
+* MIGRATION data done for Table: specification
++ MIGRATION file Created: C:\Users\marwen\AppData\Roaming\Rails_Exporter\wuzbest_products\db\migrate\20130221161026_create_specifications.rb
+* SCHEMA data done for Table: specification
+* MODEL data done for Table: specification
++ MODEL file Created: C:\Users\marwen\AppData\Roaming\Rails_Exporter\wuzbest_products\app\models\specification.rb
+* SEED data done for Table: specification
+ 
+=== SCHEMA TABLE: products_specifications
+! Skipped as join table for n:m relation of table: products_specifications
+ 
+=== SCHEMA TABLE: categories_products
+! Skipped as join table for n:m relation of table: categories_products
+ 
+=== SCHEMA TABLE: categories_manufacturers
+! Skipped as join table for n:m relation of table: categories_manufacturers
+ 
+=== SCHEMA TABLE: comments_shops
+! Skipped as join table for n:m relation of table: comments_shops
+ 
+=== SCHEMA TABLE: comparaisons_posts
+* MIGRATION data done for Table: comparaisons_posts
++ MIGRATION file Created: C:\Users\marwen\AppData\Roaming\Rails_Exporter\wuzbest_products\db\migrate\20130221161027_create_comparaisons_posts.rb
+* SCHEMA data done for Table: comparaisons_posts
+* MODEL data done for Table: comparaisons_posts
++ MODEL file Created: C:\Users\marwen\AppData\Roaming\Rails_Exporter\wuzbest_products\app\models\comparaisons_post.rb
+* SEED data done for Table: comparaisons_posts
