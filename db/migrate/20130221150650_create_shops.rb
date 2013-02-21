@@ -9,7 +9,7 @@ class CreateShops < ActiveRecord::Migration
       t.integer :user_id
       t.string :slug
       t.integer :state_id
-      t.int :city_id
+      t.integer :city_id
 
       t.timestamps
     end
