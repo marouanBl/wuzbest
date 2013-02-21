@@ -1,4 +1,10 @@
 Wuzbest::Application.routes.draw do
+  resources :questions
+
+
+  resources :answers
+
+
   resources :comments
 
 
