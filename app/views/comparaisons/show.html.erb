@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Created at:</b>
+  <%= @comparaison.created_at %>
+</p>
+
+<p>
+  <b>Slug:</b>
+  <%= @comparaison.slug %>
+</p>
+
+<p>
+  <b>First product:</b>
+  <%= @comparaison.first_product_id %>
+</p>
+
+<p>
+  <b>Second product:</b>
+  <%= @comparaison.second_product_id %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @comparaison.user_id %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%= @comparaison.category_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_comparaison_path(@comparaison) %> |
+<%= link_to 'Back', comparaisons_path %>

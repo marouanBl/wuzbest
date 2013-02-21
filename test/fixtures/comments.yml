@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  content: MyText
+  created_at: 2013-02-21 16:15:47
+  is_in_favor: 1
+  user_id: 1
+  parent_id: 1
+
+two:
+  content: MyText
+  created_at: 2013-02-21 16:15:47
+  is_in_favor: 1
+  user_id: 1
+  parent_id: 1

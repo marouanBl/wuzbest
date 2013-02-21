@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @product.name %>
+</p>
+
+<p>
+  <b>Refname:</b>
+  <%= @product.refname %>
+</p>
+
+<p>
+  <b>Created at:</b>
+  <%= @product.created_at %>
+</p>
+
+<p>
+  <b>Updated at:</b>
+  <%= @product.updated_at %>
+</p>
+
+<p>
+  <b>Released at:</b>
+  <%= @product.released_at %>
+</p>
+
+<p>
+  <b>Long desc:</b>
+  <%= @product.long_desc %>
+</p>
+
+<p>
+  <b>Manufacturer:</b>
+  <%= @product.manufacturer_id %>
+</p>
+
+<p>
+  <b>Brag:</b>
+  <%= @product.brag_id %>
+</p>
+
+<p>
+  <b>Original product:</b>
+  <%= @product.original_product_id %>
+</p>
+
+<p>
+  <b>Slug:</b>
+  <%= @product.slug %>
+</p>
+
+
+<%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Back', products_path %>

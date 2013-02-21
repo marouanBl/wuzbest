@@ -1,0 +1,109 @@
+<%= form_for(@manufacturer) do |f| %>
+  <% if @manufacturer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@manufacturer.errors.count, "error") %> prohibited this manufacturer from being saved:</h2>
+
+      <ul>
+      <% @manufacturer.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :adress %><br />
+    <%= f.text_field :adress %>
+  </div>
+  <div class="field">
+    <%= f.label :hq_lat %><br />
+    <%= f.text_field :hq_lat %>
+  </div>
+  <div class="field">
+    <%= f.label :hq_long %><br />
+    <%= f.text_field :hq_long %>
+  </div>
+  <div class="field">
+    <%= f.label :web %><br />
+    <%= f.text_field :web %>
+  </div>
+  <div class="field">
+    <%= f.label :long_desc %><br />
+    <%= f.text_area :long_desc %>
+  </div>
+  <div class="field">
+    <%= f.label :founded_at %><br />
+    <%= f.date_select :founded_at %>
+  </div>
+  <div class="field">
+    <%= f.label :closed_at %><br />
+    <%= f.date_select :closed_at %>
+  </div>
+  <div class="field">
+    <%= f.label :created_at %><br />
+    <%= f.datetime_select :created_at %>
+  </div>
+  <div class="field">
+    <%= f.label :updated_at %><br />
+    <%= f.datetime_select :updated_at %>
+  </div>
+  <div class="field">
+    <%= f.label :contact_phone %><br />
+    <%= f.text_field :contact_phone %>
+  </div>
+  <div class="field">
+    <%= f.label :contact_fax %><br />
+    <%= f.text_field :contact_fax %>
+  </div>
+  <div class="field">
+    <%= f.label :contact_email %><br />
+    <%= f.text_field :contact_email %>
+  </div>
+  <div class="field">
+    <%= f.label :owner_id %><br />
+    <%= f.number_field :owner_id %>
+  </div>
+  <div class="field">
+    <%= f.label :cover_id %><br />
+    <%= f.number_field :cover_id %>
+  </div>
+  <div class="field">
+    <%= f.label :user_id %><br />
+    <%= f.number_field :user_id %>
+  </div>
+  <div class="field">
+    <%= f.label :country_id %><br />
+    <%= f.number_field :country_id %>
+  </div>
+  <div class="field">
+    <%= f.label :slug %><br />
+    <%= f.text_field :slug %>
+  </div>
+  <div class="field">
+    <%= f.label :stock_ref %><br />
+    <%= f.text_field :stock_ref %>
+  </div>
+  <div class="field">
+    <%= f.label :stock_value %><br />
+    <%= f.text_field :stock_value %>
+  </div>
+  <div class="field">
+    <%= f.label :stock_dir %><br />
+    <%= f.number_field :stock_dir %>
+  </div>
+  <div class="field">
+    <%= f.label :state_id %><br />
+    <%= f.number_field :state_id %>
+  </div>
+  <div class="field">
+    <%= f.label :city_id %><br />
+    <%= f.number_field :city_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

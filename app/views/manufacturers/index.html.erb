@@ -1,0 +1,67 @@
+<h1>Listing manufacturers</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Adress</th>
+    <th>Hq lat</th>
+    <th>Hq long</th>
+    <th>Web</th>
+    <th>Long desc</th>
+    <th>Founded at</th>
+    <th>Closed at</th>
+    <th>Created at</th>
+    <th>Updated at</th>
+    <th>Contact phone</th>
+    <th>Contact fax</th>
+    <th>Contact email</th>
+    <th>Owner</th>
+    <th>Cover</th>
+    <th>User</th>
+    <th>Country</th>
+    <th>Slug</th>
+    <th>Stock ref</th>
+    <th>Stock value</th>
+    <th>Stock dir</th>
+    <th>State</th>
+    <th>City</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @manufacturers.each do |manufacturer| %>
+  <tr>
+    <td><%= manufacturer.name %></td>
+    <td><%= manufacturer.adress %></td>
+    <td><%= manufacturer.hq_lat %></td>
+    <td><%= manufacturer.hq_long %></td>
+    <td><%= manufacturer.web %></td>
+    <td><%= manufacturer.long_desc %></td>
+    <td><%= manufacturer.founded_at %></td>
+    <td><%= manufacturer.closed_at %></td>
+    <td><%= manufacturer.created_at %></td>
+    <td><%= manufacturer.updated_at %></td>
+    <td><%= manufacturer.contact_phone %></td>
+    <td><%= manufacturer.contact_fax %></td>
+    <td><%= manufacturer.contact_email %></td>
+    <td><%= manufacturer.owner_id %></td>
+    <td><%= manufacturer.cover_id %></td>
+    <td><%= manufacturer.user_id %></td>
+    <td><%= manufacturer.country_id %></td>
+    <td><%= manufacturer.slug %></td>
+    <td><%= manufacturer.stock_ref %></td>
+    <td><%= manufacturer.stock_value %></td>
+    <td><%= manufacturer.stock_dir %></td>
+    <td><%= manufacturer.state_id %></td>
+    <td><%= manufacturer.city_id %></td>
+    <td><%= link_to 'Show', manufacturer %></td>
+    <td><%= link_to 'Edit', edit_manufacturer_path(manufacturer) %></td>
+    <td><%= link_to 'Destroy', manufacturer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Manufacturer', new_manufacturer_path %>

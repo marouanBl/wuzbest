@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  main_shop_id: 1
+  web: MyString
+  contact_phone: MyString
+  contact_fax: MyString
+  contact_email: MyString
+  user_id: 1
+  slug: MyString
+  state_id: 1
+  city_id: 
+
+two:
+  main_shop_id: 1
+  web: MyString
+  contact_phone: MyString
+  contact_fax: MyString
+  contact_email: MyString
+  user_id: 1
+  slug: MyString
+  state_id: 1
+  city_id: 

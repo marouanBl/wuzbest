@@ -1,0 +1,33 @@
+<h1>Listing comparaisons</h1>
+
+<table>
+  <tr>
+    <th>Created at</th>
+    <th>Slug</th>
+    <th>First product</th>
+    <th>Second product</th>
+    <th>User</th>
+    <th>Category</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @comparaisons.each do |comparaison| %>
+  <tr>
+    <td><%= comparaison.created_at %></td>
+    <td><%= comparaison.slug %></td>
+    <td><%= comparaison.first_product_id %></td>
+    <td><%= comparaison.second_product_id %></td>
+    <td><%= comparaison.user_id %></td>
+    <td><%= comparaison.category_id %></td>
+    <td><%= link_to 'Show', comparaison %></td>
+    <td><%= link_to 'Edit', edit_comparaison_path(comparaison) %></td>
+    <td><%= link_to 'Destroy', comparaison, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Comparaison', new_comparaison_path %>
