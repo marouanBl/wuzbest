@@ -1,0 +1,110 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Username:</b>
+  <%= @user.username %>
+</p>
+
+<p>
+  <b>Username canonical:</b>
+  <%= @user.username_canonical %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @user.email %>
+</p>
+
+<p>
+  <b>Email canonical:</b>
+  <%= @user.email_canonical %>
+</p>
+
+<p>
+  <b>Enabled:</b>
+  <%= @user.enabled %>
+</p>
+
+<p>
+  <b>Salt:</b>
+  <%= @user.salt %>
+</p>
+
+<p>
+  <b>Password:</b>
+  <%= @user.password %>
+</p>
+
+<p>
+  <b>Last login:</b>
+  <%= @user.last_login %>
+</p>
+
+<p>
+  <b>Locked:</b>
+  <%= @user.locked %>
+</p>
+
+<p>
+  <b>Expired:</b>
+  <%= @user.expired %>
+</p>
+
+<p>
+  <b>Expires at:</b>
+  <%= @user.expires_at %>
+</p>
+
+<p>
+  <b>Confirmation token:</b>
+  <%= @user.confirmation_token %>
+</p>
+
+<p>
+  <b>Password requested at:</b>
+  <%= @user.password_requested_at %>
+</p>
+
+<p>
+  <b>Roles:</b>
+  <%= @user.roles %>
+</p>
+
+<p>
+  <b>Credentials expired:</b>
+  <%= @user.credentials_expired %>
+</p>
+
+<p>
+  <b>Credentials expire at:</b>
+  <%= @user.credentials_expire_at %>
+</p>
+
+<p>
+  <b>Avatar:</b>
+  <%= @user.avatar %>
+</p>
+
+<p>
+  <b>Country:</b>
+  <%= @user.country_id %>
+</p>
+
+<p>
+  <b>Currency:</b>
+  <%= @user.currency_id %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%= @user.state_id %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @user.city_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

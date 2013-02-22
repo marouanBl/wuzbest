@@ -1,0 +1,101 @@
+<%= form_for(@user) do |f| %>
+  <% if @user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% @user.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :username %><br />
+    <%= f.text_field :username %>
+  </div>
+  <div class="field">
+    <%= f.label :username_canonical %><br />
+    <%= f.text_field :username_canonical %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :email_canonical %><br />
+    <%= f.text_field :email_canonical %>
+  </div>
+  <div class="field">
+    <%= f.label :enabled %><br />
+    <%= f.number_field :enabled %>
+  </div>
+  <div class="field">
+    <%= f.label :salt %><br />
+    <%= f.text_field :salt %>
+  </div>
+  <div class="field">
+    <%= f.label :password %><br />
+    <%= f.text_field :password %>
+  </div>
+  <div class="field">
+    <%= f.label :last_login %><br />
+    <%= f.datetime_select :last_login %>
+  </div>
+  <div class="field">
+    <%= f.label :locked %><br />
+    <%= f.number_field :locked %>
+  </div>
+  <div class="field">
+    <%= f.label :expired %><br />
+    <%= f.number_field :expired %>
+  </div>
+  <div class="field">
+    <%= f.label :expires_at %><br />
+    <%= f.datetime_select :expires_at %>
+  </div>
+  <div class="field">
+    <%= f.label :confirmation_token %><br />
+    <%= f.text_field :confirmation_token %>
+  </div>
+  <div class="field">
+    <%= f.label :password_requested_at %><br />
+    <%= f.datetime_select :password_requested_at %>
+  </div>
+  <div class="field">
+    <%= f.label :roles %><br />
+    <%= f.text_area :roles %>
+  </div>
+  <div class="field">
+    <%= f.label :credentials_expired %><br />
+    <%= f.number_field :credentials_expired %>
+  </div>
+  <div class="field">
+    <%= f.label :credentials_expire_at %><br />
+    <%= f.datetime_select :credentials_expire_at %>
+  </div>
+  <div class="field">
+    <%= f.label :avatar %><br />
+    <%= f.number_field :avatar %>
+  </div>
+  <div class="field">
+    <%= f.label :country_id %><br />
+    <%= f.number_field :country_id %>
+  </div>
+  <div class="field">
+    <%= f.label :currency_id %><br />
+    <%= f.number_field :currency_id %>
+  </div>
+  <div class="field">
+    <%= f.label :state_id %><br />
+    <%= f.number_field :state_id %>
+  </div>
+  <div class="field">
+    <%= f.label :city_id %><br />
+    <%= f.number_field :city_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

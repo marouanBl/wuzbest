@@ -1,0 +1,47 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  username: MyString
+  username_canonical: MyString
+  email: MyString
+  email_canonical: MyString
+  enabled: 1
+  salt: MyString
+  password: MyString
+  last_login: 2013-02-22 21:42:43
+  locked: 1
+  expired: 1
+  expires_at: 2013-02-22 21:42:43
+  confirmation_token: MyString
+  password_requested_at: 2013-02-22 21:42:43
+  roles: MyText
+  credentials_expired: 1
+  credentials_expire_at: 2013-02-22 21:42:43
+  avatar: 1
+  country_id: 1
+  currency_id: 1
+  state_id: 1
+  city_id: 1
+
+two:
+  username: MyString
+  username_canonical: MyString
+  email: MyString
+  email_canonical: MyString
+  enabled: 1
+  salt: MyString
+  password: MyString
+  last_login: 2013-02-22 21:42:43
+  locked: 1
+  expired: 1
+  expires_at: 2013-02-22 21:42:43
+  confirmation_token: MyString
+  password_requested_at: 2013-02-22 21:42:43
+  roles: MyText
+  credentials_expired: 1
+  credentials_expire_at: 2013-02-22 21:42:43
+  avatar: 1
+  country_id: 1
+  currency_id: 1
+  state_id: 1
+  city_id: 1

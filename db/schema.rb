@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130221161027) do
+ActiveRecord::Schema.define(:version => 20130222204242) do
 
   create_table "admin_contacts", :force => true do |t|
     t.integer  "user_id"
@@ -398,5 +398,31 @@ ActiveRecord::Schema.define(:version => 20130221161027) do
   end
 
   add_index "states", ["country_id"], :name => "states_fk_state_country1_idx"
+
+  create_table "users", :force => true do |t|
+    t.string   "username"
+    t.string   "username_canonical"
+    t.string   "email"
+    t.string   "email_canonical"
+    t.integer  "enabled"
+    t.string   "salt"
+    t.string   "password"
+    t.datetime "last_login"
+    t.integer  "locked"
+    t.integer  "expired"
+    t.datetime "expires_at"
+    t.string   "confirmation_token"
+    t.datetime "password_requested_at"
+    t.text     "roles"
+    t.integer  "credentials_expired"
+    t.datetime "credentials_expire_at"
+    t.integer  "avatar"
+    t.integer  "country_id"
+    t.integer  "currency_id"
+    t.integer  "state_id"
+    t.integer  "city_id"
+    t.datetime "created_at",            :null => false
+    t.datetime "updated_at",            :null => false
+  end
 
 end
