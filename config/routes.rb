@@ -1,4 +1,6 @@
 Wuzbest::Application.routes.draw do
+  get "welcome/index"
+
   get "home/index"
 
   devise_for :users
