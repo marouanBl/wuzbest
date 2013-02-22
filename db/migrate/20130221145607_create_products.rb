@@ -14,7 +14,7 @@ class CreateProducts < ActiveRecord::Migration
 
       t.timestamps
     end
-    add_index(:products, [:cities_picture_id], :name => 'products_fk_product_user1_idx')
-    add_index(:products, [:product_id], :name => 'products_fk_product_product1_idx')
+    #add_index(:products, [:cities_picture_id], :name => 'products_fk_product_user1_idx')
+    #add_index(:products, [:product_id], :name => 'products_fk_product_product1_idx')
   end
 end

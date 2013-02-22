@@ -3,7 +3,6 @@ class CreateUsers < ActiveRecord::Migration
     create_table :users do |t|
       t.string :username
       t.string :username_canonical
-      t.string :email
       t.string :email_canonical
       t.integer :enabled
       t.string :salt

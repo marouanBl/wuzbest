@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130222204242) do
+ActiveRecord::Schema.define(:version => 20130222205509) do
 
   create_table "admin_contacts", :force => true do |t|
     t.integer  "user_id"
@@ -41,6 +41,7 @@ ActiveRecord::Schema.define(:version => 20130222204242) do
   create_table "categories", :force => true do |t|
     t.string   "name"
     t.string   "slug",        :null => false
+    t.integer  "parent_id"
     t.integer  "category_id"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
@@ -132,9 +133,11 @@ ActiveRecord::Schema.define(:version => 20130222204242) do
   create_table "comments", :force => true do |t|
     t.text     "content"
     t.string   "is_in_favor"
+    t.datetime "created_at",        :null => false
+    t.integer  "user_id"
+    t.integer  "parent_id"
     t.integer  "cities_picture_id"
     t.integer  "comment_id"
-    t.datetime "created_at",        :null => false
     t.datetime "updated_at",        :null => false
   end
 
@@ -330,20 +333,18 @@ ActiveRecord::Schema.define(:version => 20130222204242) do
   add_index "posts", ["user_id"], :name => "posts_fk_post_user1_idx"
 
   create_table "products", :force => true do |t|
-    t.string   "name",              :null => false
+    t.string   "name",                :null => false
     t.string   "refname"
     t.date     "released_at"
     t.text     "long_desc"
     t.integer  "manufacturer_id"
     t.integer  "cities_picture_id"
-    t.integer  "product_id"
-    t.string   "slug",              :null => false
-    t.datetime "created_at",        :null => false
-    t.datetime "updated_at",        :null => false
+    t.string   "slug",                :null => false
+    t.integer  "brag_id"
+    t.integer  "original_product_id"
+    t.datetime "created_at",          :null => false
+    t.datetime "updated_at",          :null => false
   end
-
-  add_index "products", ["cities_picture_id"], :name => "products_fk_product_user1_idx"
-  add_index "products", ["product_id"], :name => "products_fk_product_product1_idx"
 
   create_table "products_shops", :force => true do |t|
     t.integer  "supply_count"
@@ -402,7 +403,6 @@ ActiveRecord::Schema.define(:version => 20130222204242) do
   create_table "users", :force => true do |t|
     t.string   "username"
     t.string   "username_canonical"
-    t.string   "email"
     t.string   "email_canonical"
     t.integer  "enabled"
     t.string   "salt"
@@ -421,8 +421,21 @@ ActiveRecord::Schema.define(:version => 20130222204242) do
     t.integer  "currency_id"
     t.integer  "state_id"
     t.integer  "city_id"
-    t.datetime "created_at",            :null => false
-    t.datetime "updated_at",            :null => false
+    t.datetime "created_at",                             :null => false
+    t.datetime "updated_at",                             :null => false
+    t.string   "email",                  :default => "", :null => false
+    t.string   "encrypted_password",     :default => "", :null => false
+    t.string   "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.integer  "sign_in_count",          :default => 0
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.string   "current_sign_in_ip"
+    t.string   "last_sign_in_ip"
   end
+
+  add_index "users", ["email"], :name => "index_users_on_email", :unique => true
+  add_index "users", ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true
 
 end
