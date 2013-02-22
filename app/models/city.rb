@@ -3,7 +3,7 @@ class City < ActiveRecord::Base
 
   attr_accessible  :id, :name, :slug, :state, :state_id
 
-  belongs_to :state 
+  belongs_to :state
 
   validates :slug, :uniqueness => true
 
