@@ -7,8 +7,65 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<header>
+  <div class="inner">
+    <div class="header_left">
+      <h1 class="logo left">
+        <a href=""><%= image_tag("logo.png") %></a>
+      </h1>
 
-<%= yield %>
+      <nav class="navigation-left left">
+        <ul class="navmenu">
+          <li>
+            <%= link_to "Home", root_path %>
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="navigation-right right">
+        <ul class="navmenu">
+          <li>
+            <%= link_to "Login", login_path %> or <%= link_to "Register", register_path, :class => "btn" %>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </div>
+</header>
+
+<% if user_signed_in? %>
+    <%= link_to "Logout", logout_path, :class => "btn btn-danger pull-right" %>
+<% else %>
+    <ul class="nav pull-right">
+      <li>
+        <a href="#loginModal" role="button" data-toggle="modal">Login</a>
+      </li>
+      <li style="line-height: 48px; margin: 0 15px 0 15px;">
+        or
+      </li>
+      <li>
+        <%= link_to "Logout", logout_path, :class => "btn btn-danger btn-small" %>
+      </li>
+    </ul>
+<% end %>
+
+
+
+
+
+<p id="notice"><%= notice %></p>
+<p id="alert"><%= alert %></p>
+
+
+
+
+
+
+<div class='container'>
+
+  <%= yield %>
+</div>
 
 </body>
 </html>
