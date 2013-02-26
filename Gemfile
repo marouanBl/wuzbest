@@ -7,6 +7,8 @@ gem 'rails', '3.2.12'
 
 gem 'sqlite3'
 gem 'devise'
+gem 'omniauth'
+gem 'omniauth-facebook'
 gem 'carrierwave'
 
 
