@@ -1,2 +1,26 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+<div id="container">
+
+	<div class="text-description-group">
+		"We pick the best choices for you"
+	</div>
+
+		<div class="compare-box">
+			<a href="" class="text">Compare</a>
+			<input type="text" class="compare-form" placeholder="This One...">
+			<a href="" class="text">To</a>
+			<input type="text" class="compare-form" placeholder="That One...">
+			<a href="http://localhost:3000/comparaisons/1" class="button button-green">Go</a>
+		</div>
+
+
+</div>
+
+	<script>
+	  $.backstretch([
+	    "<%= asset_path('home/project.jpg') %>",
+	    "<%= asset_path('home/apple.jpg') %>",
+	    "<%= asset_path('home/rainbowofgrey.jpg') %>",
+	    "<%= asset_path('home/turfroof.jpg') %>",
+	    "<%= asset_path('home/france.jpg') %>"
+	  ], {duration: 8000});
+	</script>

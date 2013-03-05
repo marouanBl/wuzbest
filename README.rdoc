@@ -11,22 +11,6 @@ just generated the scaffolds, fixed the db, created the models
 Coming tasks:
 *********************************************************************
 
-
-        * seed generations : rake db:seed
-        * navbar creation
-        * configure carrierwave for: - users
-                                     - products
-                                     - manufacturers (upload)
-        * create relations between manufacturers and products in the view file :  manufacturer.product each do
-
-
-*********************************************************************
-Done Tasks:
-*********************************************************************
-
-        * create the db
-        * create the models
-        * generate necessary scaffolds
-        * install gem devise
-        * install gem CarrierWave
-
+<> generating the devise gem
+<> linking the diferent parts of the application
+<> slim come here							   

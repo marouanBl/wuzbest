@@ -7,10 +7,10 @@ gem 'rails', '3.2.12'
 
 gem 'sqlite3'
 gem 'devise'
-gem 'omniauth'
-gem 'omniauth-facebook'
-gem 'carrierwave'
 
+
+#the backstretch fork for rails, sliding background images
+  gem 'backstretch-rails'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -21,11 +21,13 @@ group :assets do
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
 
+  #well, as it says, it's bootstrap
+  gem "twitter-bootstrap-rails", :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
+
   gem 'uglifier', '>= 1.0.3'
 end
 
 gem 'jquery-rails'
-gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

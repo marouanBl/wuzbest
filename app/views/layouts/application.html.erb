@@ -4,90 +4,20 @@
   <title>Wuzbest</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
-  <link href="/assets/bootstrap.css" media="all" rel="stylesheet" type="text/css" />
-  <link href="/assets/bootstrap.min.css" media="all" rel="stylesheet" type="text/css" />
-  <link href="/assets/bootstrap-responsive.css" media="all" rel="stylesheet" type="text/css" />
-  <link href="/assets/bootstrap-responsive.min.css" media="all" rel="stylesheet" type="text/css" />
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body class="body">
+	<header>
+		<div id="logo">
+			<a href="">Wuzbest</a>
+		</div>
 
-
-  
-	<div class="navbar">
-		<div class="navbar-inner">
-    <div class="container">
- 
-      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </a>
- 
-      <!-- Be sure to leave the brand out there if you want it shown -->
-      <a class="brand" href="#">Project name</a>
- 
-      <!-- Everything you want hidden at 940px or less, place within here -->
-      <div class="nav-collapse collapse">
-      	<div class="header_left">
-				<h1 class="logo left">
-					<a href=""><%= image_tag("logo.png") %></a>
-				</h1>
-
-				<nav class="navigation-left left">
-					<ul class="navmenu">
-						<li>
-							<%= link_to "Home", root_path %>
-						</li>
-					</ul>
-				</nav>
-
-				<nav class="navigation-right right">
-					<ul class="navmenu">
-						<li>
-							<%= link_to "Login", login_path %> or <%= link_to "Register", register_path, :class => "btn" %>
-										<% if user_signed_in? %>
-				<%= link_to "Logout", logout_path, :class => "btn btn-danger pull-right" %>
-			<% else %>
-				<ul class="nav pull-right">
-					<li>
-						<a href="#loginModal" role="button" data-toggle="modal">Login</a>
-					</li>
-					<li style="line-height: 48px; margin: 0 15px 0 15px;">
-						or
-					</li>
-					<li>
-						<%= link_to "Logout", logout_path, :class => "btn btn-danger btn-small" %>
-					</li>
-				</ul>
-			<% end %>
-
-						</li>
-					</ul>
-				</nav>
-
-			</div>
-        <!-- .nav, .navbar-search, .navbar-form, etc -->
-      </div>
- 
-    </div>
-</div>
-</div>
-  
-
-		
-
-
-
-
-
-
-
-
-
-
-
+		<div id="menu">
+			<a href="">Compare</a>
+			<a href="">Explore</a>
+			<a href="">Profil</a>
+		</div>
+	</header>
 
 <%= yield %>
 

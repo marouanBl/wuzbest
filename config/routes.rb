@@ -3,17 +3,6 @@ Wuzbest::Application.routes.draw do
 
   get "home/index"
 
-
-  #User related routes
-  devise_for :users do
-    get "login", :to => "devise/sessions#new"
-    get "logout", :to => "devise/sessions#destroy"
-    get "register", :to => "devise/registrations#new"
-  end
-
-
-  
-
   devise_for :users
 
   resources :users

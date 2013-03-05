@@ -4,6 +4,9 @@ body {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
+
+  padding: 0px;
+  margin: 0px;
 }
 
 p, ol, ul, td {
@@ -19,13 +22,12 @@ pre {
 }
 
 a {
-  color: #000;
+  text-decoration: none;
   &:visited {
-    color: #666;
+    text-decoration: none;
   }
   &:hover {
-    color: #fff;
-    background-color: #000;
+  text-decoration: none;
   }
 }
 
