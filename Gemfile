@@ -22,7 +22,7 @@ group :assets do
   # gem 'therubyracer', :platforms => :ruby
 
   #well, as it says, it's bootstrap
-  gem "twitter-bootstrap-rails", :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
+  gem "twitter-bootstrap-rails", :git => 'http://github.com/seyhunak/twitter-bootstrap-rails.git'
 
   gem 'uglifier', '>= 1.0.3'
 end
